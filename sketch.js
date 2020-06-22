@@ -11,11 +11,15 @@ function setup(){
     world = engine.world;
 
     box1 = new Box(200,300,50,50);
+    
+    ground = new groundClass(200,380,400,40, 'red')
+    
 }
 
 function draw(){
     background(0);
+
     Engine.update(engine);
     box1.display();
-   
+   ground.display();
 }
